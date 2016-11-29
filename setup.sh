@@ -14,7 +14,7 @@ sudo apt-get install -y python3.4 python3.4-dev
 #安装pip，确保本脚本和get-pip.py 文件在一个文件夹
 BASE_DIR="$( cd "$( dirname "$0"  )" && pwd  )"
 sudo chmod +x ${BASE_DIR}/get-pip.py
-sudo python3.4 ${BASE_DIR}/get-pip.py -i http://mirrors.aliyun.com/pypi/simple/
+sudo python3.4 ${BASE_DIR}/get-pip.py -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
 
 sudo pip3.4 install redis && sudo pip3.4 install requests && sudo pip3.4 install flask && sudo pip3.4 install flask-mail
 
